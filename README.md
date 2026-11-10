@@ -106,7 +106,7 @@ Buy-side procurement contracting spans four core continuous stages:
 
 *Sorted in descending order by GitHub stargazer count.*
 
-| Project | GitHub Stars Badge | License | Primary Category & Capabilities | Tech Stack |
+| Project | GitHub_Stars_Badge | License | Primary Category & Capabilities | Tech Stack |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Odoo](https://github.com/odoo/odoo)** | [![Odoo Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers) | LGPL-3.0 | 📦 Comprehensive ERP suite with vendor procurement, purchase agreements, and RFQ tenders | Python, JavaScript, PostgreSQL |
 | **[ERPNext](https://github.com/frappe/erpnext)** | [![ERPNext Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) | GPL-3.0 | 🏭 Full-scale ERP with supplier management, contract registers, PO approvals, and bidding | Python, Frappe, MariaDB |
@@ -193,7 +193,7 @@ Contributions are warmly encouraged! To propose a tool, update pricing, or refin
 1. 🍴 Fork this repository.
 2. 📝 Update [`README.md`](README.md) following the existing Markdown tables and badge formats.
 3. 🔎 Ensure all SaaS listings include specific starting prices, accurate free tier/trial limits, and company scale metrics.
-4. ⭐ For open-source projects, include the social stars badge linked to `/stargazers`.
+4. ⭐ For open-source projects, include the social Stars_Badge linked to `/stargazers`.
 5. 🚀 Open a Pull Request with a clear description of your additions!
 
 ---
