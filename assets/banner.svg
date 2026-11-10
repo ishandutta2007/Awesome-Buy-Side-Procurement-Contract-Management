@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#080c14" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Glowing Orb Filters -->
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70" result="blur" />
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="85" result="blur" />
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.22" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* CSS Animations for dynamic elements */
+    @keyframes pulseGlow1 {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.18) translate(30px, -20px); opacity: 0.55; }
+    }
+    @keyframes pulseGlow2 {
+      0%, 100% { transform: scale(1.1) translate(0, 0); opacity: 0.30; }
+      50% { transform: scale(0.9) translate(-40px, 25px); opacity: 0.50; }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(7px); }
+    }
+    @keyframes pulseFlowLine {
+      0% { stroke-dashoffset: 60; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .orb-1 {
+      transform-origin: 200px 100px;
+      animation: pulseGlow1 8s ease-in-out infinite;
+    }
+    .orb-2 {
+      transform-origin: 1000px 320px;
+      animation: pulseGlow2 10s ease-in-out infinite;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: pulseFlowLine 3s linear infinite;
+    }
+    .card-anim-1 {
+      animation: floatCard1 5s ease-in-out infinite;
+    }
+    .card-anim-2 {
+      animation: floatCard2 6s ease-in-out infinite 0.5s;
+    }
+    .card-anim-3 {
+      animation: floatCard1 5.5s ease-in-out infinite 1s;
+    }
+    .card-anim-4 {
+      animation: floatCard2 6.5s ease-in-out infinite 1.5s;
+    }
+
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .sub-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+    }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Animated Ambient Glowing Orbs (in background) -->
+  <circle class="orb-1" cx="200" cy="120" r="140" fill="#0284c7" filter="url(#glowCyan)" />
+  <circle class="orb-2" cx="1020" cy="300" r="160" fill="#7c3aed" filter="url(#glowPurple)" />
+  <circle cx="600" cy="380" r="130" fill="#4f46e5" filter="url(#glowPurple)" opacity="0.25" />
+
+  <!-- Flow Connector Lines Behind Cards -->
+  <g opacity="0.5">
+    <line x1="280" y1="330" x2="350" y2="330" stroke="#38bdf8" stroke-width="2" class="flow-line" />
+    <line x1="560" y1="330" x2="630" y2="330" stroke="#818cf8" stroke-width="2" class="flow-line" />
+    <line x1="840" y1="330" x2="910" y2="330" stroke="#c084fc" stroke-width="2" class="flow-line" />
+  </g>
+
+  <!-- Dynamic Process Workflow Cards (Bottom Row) -->
+  <!-- Step 1: Sourcing -->
+  <g class="card-anim-1">
+    <rect x="70" y="295" width="210" height="70" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" filter="url(#cardShadow)" />
+    <circle cx="102" cy="330" r="18" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="102" y="335" text-anchor="middle" font-size="16">🔍</text>
+    <text x="132" y="325" fill="#f8fafc" class="badge-text" font-size="14">1. Sourcing &amp; RFx</text>
+    <text x="132" y="345" fill="#94a3b8" class="sub-text" font-size="11">Vendor discovery &amp; score</text>
+  </g>
+
+  <!-- Step 2: AI Authoring -->
+  <g class="card-anim-2">
+    <rect x="350" y="295" width="210" height="70" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#818cf8" stroke-opacity="0.4" stroke-width="1.5" filter="url(#cardShadow)" />
+    <circle cx="382" cy="330" r="18" fill="#4f46e5" fill-opacity="0.3" stroke="#818cf8" stroke-width="1.5" />
+    <text x="382" y="335" text-anchor="middle" font-size="16">⚡</text>
+    <text x="412" y="325" fill="#f8fafc" class="badge-text" font-size="14">2. AI Clause &amp; Redline</text>
+    <text x="412" y="345" fill="#94a3b8" class="sub-text" font-size="11">Playbooks &amp; deviation risk</text>
+  </g>
+
+  <!-- Step 3: Approvals & E-Sign -->
+  <g class="card-anim-3">
+    <rect x="630" y="295" width="210" height="70" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.5" filter="url(#cardShadow)" />
+    <circle cx="662" cy="330" r="18" fill="#7e22ce" fill-opacity="0.3" stroke="#a855f7" stroke-width="1.5" />
+    <text x="662" y="335" text-anchor="middle" font-size="16">✍️</text>
+    <text x="692" y="325" fill="#f8fafc" class="badge-text" font-size="14">3. Approvals &amp; Sign</text>
+    <text x="692" y="345" fill="#94a3b8" class="sub-text" font-size="11">RBAC &amp; digital execution</text>
+  </g>
+
+  <!-- Step 4: Obligation Tracking -->
+  <g class="card-anim-4">
+    <rect x="910" y="295" width="220" height="70" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#ec4899" stroke-opacity="0.4" stroke-width="1.5" filter="url(#cardShadow)" />
+    <circle cx="942" cy="330" r="18" fill="#be185d" fill-opacity="0.3" stroke="#ec4899" stroke-width="1.5" />
+    <text x="942" y="335" text-anchor="middle" font-size="16">🔔</text>
+    <text x="972" y="325" fill="#f8fafc" class="badge-text" font-size="14">4. Obligations &amp; SLAs</text>
+    <text x="972" y="345" fill="#94a3b8" class="sub-text" font-size="11">Renewals &amp; compliance</text>
+  </g>
+
+  <!-- FOREGROUND: Header Pill Badge -->
+  <g>
+    <rect x="70" y="45" width="310" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="86" cy="61" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="100" y="66" fill="#38bdf8" class="badge-text" font-size="12" letter-spacing="1">CURATED PROCUREMENT ECOSYSTEM</text>
+  </g>
+
+  <!-- FOREGROUND: Main Title -->
+  <text x="70" y="130" fill="url(#primaryGrad)" class="title-text" font-size="44">Awesome Buy-Side Procurement</text>
+  <text x="70" y="180" fill="#ffffff" class="title-text" font-size="38">&amp; Contract Management (CLM)</text>
+
+  <!-- FOREGROUND: Subtitle & Description -->
+  <text x="70" y="222" fill="#cbd5e1" class="sub-text" font-size="18">
+    Source-to-Contract (S2C) Automation • Supplier Scoring • AI Clause Intelligence • Self-Hosted Open Source
+  </text>
+  <text x="70" y="250" fill="#64748b" class="sub-text" font-size="14">
+    Comprehensive comparative directory of enterprise SaaS suites and verified open-source GitHub alternatives.
+  </text>
+</svg>

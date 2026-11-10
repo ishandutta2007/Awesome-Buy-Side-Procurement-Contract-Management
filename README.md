@@ -1,175 +1,224 @@
-# Awesome Buy-Side & Procurement Contract Management
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Buy-Side Procurement &amp; Contract Management (CLM) Banner" width="100%" />
+</p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Buy-Side-Procurement-Contract-Management/pulls)
+# 📑 Awesome Buy-Side &amp; Procurement Contract Management
 
-> A curated list of leading **SaaS platforms**, **enterprise Source-to-Contract (S2C) software**, and **open-source Contract Lifecycle Management (CLM)** solutions for procurement, legal operations, and vendor management teams.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a><a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome"></a><a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0"></a><a href="https://github.com/ishandutta2007/Awesome-Buy-Side-Procurement-Contract-Management/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a><a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-A comprehensive directory for procurement leaders, legal counsels, contract managers, and developers building source-to-pay automation. Covers solutions for contract authoring, automated redlining, vendor risk scoring, obligation tracking, e-signatures, and AI-assisted clause intelligence.
-
----
-
-## Table of Contents
-
-- [Overview & Architecture](#overview--architecture)
-- [SaaS & Enterprise Platforms](#saas--enterprise-platforms)
-  - [SaaS Comparison & Pricing Summary](#saas-comparison--pricing-summary)
-  - [Detailed SaaS Platform Breakdown](#detailed-saas-platform-breakdown)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-  - [Open-Source Ecosystem Matrix](#open-source-ecosystem-matrix)
-  - [Full-Lifecycle & AI CLM Projects](#full-lifecycle--ai-clm-projects)
-  - [Specialized & Complementary Tools](#specialized--complementary-tools)
-- [Recommended Open-Source Architecture](#recommended-open-source-architecture)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+> 🎯 A curated, battle-tested list of leading **enterprise SaaS suites**, **Source-to-Contract (S2C)** platforms, and **open-source Contract Lifecycle Management (CLM)** tools designed for procurement leaders, legal counsels, CFOs, and software engineers.
 
 ---
 
-## Overview & Architecture
+## 🧭 Table of Contents
 
-Modern buy-side contract lifecycle management covers the end-to-end journey from sourcing event to post-signature compliance:
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏗️ Buy-Side Contract Lifecycle Architecture](#️-buy-side-contract-lifecycle-architecture)
+- [🏢 SaaS & Enterprise Platforms](#-saas--enterprise-platforms)
+  - [💼 SaaS Comparison & Pricing Matrix](#-saas-comparison--pricing-matrix)
+  - [🔍 Detailed SaaS Profiles](#-detailed-saas-profiles)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⭐ Open-Source Ecosystem Matrix (Ranked by Stars)](#-open-source-ecosystem-matrix-ranked-by-stars)
+  - [🛠️ Deep-Dive: Open-Source Tools](#️-deep-dive-open-source-tools)
+- [📐 Recommended Open-Source Architecture](#-recommended-open-source-architecture)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsor](#-support--sponsor)
+- [📈 Star History](#star-history)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global Contract Lifecycle Management (CLM) and buy-side procurement software market is valued at approximately **$3.5 billion to $3.77 billion in 2026** and is projected to surge past **$8.7 billion to $9.7 billion by 2030** at an estimated CAGR of **12%–13%**.
+
+The sector is **moderately fragmented**: rather than a singular winner-take-all monopoly, the market divides across multi-billion-dollar enterprise ERP incumbents (SAP, Workday), specialized pure-play CLMs (Icertis, Ironclad, Agiloft), and unified source-to-pay suites (Coupa, Jaggaer, GEP), leaving substantial room for niche legal-AI point solutions and self-hosted open-source alternatives.
+
+---
+
+## 🏗️ Buy-Side Contract Lifecycle Architecture
+
+Buy-side procurement contracting spans four core continuous stages:
 
 ```
-[ Sourcing & RFx ] ➔ [ Authoring & Redlining ] ➔ [ Approvals & E-Sign ] ➔ [ Post-Signature Tracking ]
-      │                         │                         │                         │
-  Vendor Discovery         AI Clause Risk          Role-Based Approvals     Obligation Tracking
-  Supplier Scoring         Playbook Rules          Legal Audit Trails       Renewal & SLA Alerts
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│ 🔍 1. SOURCING  │  ──▶  │ ⚡ 2. AUTHORING │  ──▶  │ ✍️ 3. APPROVAL  │  ──▶  │ 🔔 4. OBLIGATION│
+│    & RFx        │       │    & REDLINING  │       │    & SIGNING    │       │    & TRACKING   │
+└─────────────────┘       └─────────────────┘       └─────────────────┘       └─────────────────┘
+  • Vendor Intake           • AI Clause Scoring       • Dynamic Multi-RBAC      • SLA & Milestone Alert
+  • RFP & Tenders           • Playbook Fallbacks      • Digital E-Signature     • Auto-Renewal Horizon
+  • Supplier Scorecard      • MS Word / Online Sync   • Tamper-Evident Audit    • Spend Compliance
 ```
 
 ---
 
-## SaaS & Enterprise Platforms
+## 🏢 SaaS & Enterprise Platforms
 
-### SaaS Comparison & Pricing Summary
+### 💼 SaaS Comparison & Pricing Matrix
 
-| Platform | Category / Primary Focus | Pricing Model | Free Tier & Trial Limits | Deployment / Integrations |
+*Sorted in descending order by company scale (enterprise market capitalization or private equity valuation).*
+
+| Platform | Category / Primary Focus | Company Scale (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Free Trial Limits | Key Integrations |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[SAP Ariba Contracts](https://www.sap.com/)** | 🌐 Global S2C & Enterprise Procurement | **~$270B Market Cap** (FY25 Rev: €36.8B) | Starts at **$10,000/year** (bundled S2C subscription) | **Supplier Free Tier:** Free permanently for basic Standard accounts; capped at 5 documents or $50k transaction volume per customer (no buyer free tier) | SAP S/4HANA, SAP Business Network |
+| **[Scout RFP (Workday Strategic Sourcing)](https://www.workday.com/)** | 📊 Strategic Sourcing & RFx Pipelines | **~$48B Market Cap** (FY26 Rev: $9.55B) | Starts at **$15,000/year** (module base fee) | **Free Trial:** 14-day guided sandbox access upon sales demo qualification (no perpetual free tier) | Workday Financials, Salesforce, NetSuite |
+| **[Tipalti](https://tipalti.com/)** | 💳 Payables Automation & Procurement Approvals | **$8.3B Valuation** ($550M+ funding) | Starts at **$149/month** (base platform fee + transaction fees) | **Free Trial:** 14-day trial available via sales consultation and sandbox setup (no perpetual free tier) | NetSuite, QuickBooks, Xero |
+| **[Coupa Procurement & CLM](https://www.coupa.com/)** | 🛒 Source-to-Contract & Business Spend Mgmt | **$8.0B Acquisition** (Thoma Bravo; ~$818M Rev) | Starts at **$25,000/year** (mid-market spend tier) | **Supplier Free Tier:** Coupa Supplier Portal (CSP) is permanently 100% free for vendors to receive POs and invoice; buyer platform has no free tier (sales-led POC only) | NetSuite, SAP, Oracle, Workday |
+| **[Ironclad](https://ironcladapp.com/)** | 🤖 Digital Contracting & AI Negotiation | **$3.2B Valuation** ($200M+ ARR) | Starts at **$500/user/month** (minimum ~10 seats, ~$15,000–$30,000/year contract) | **Free Trial:** 14-day scoped pilot / proof-of-concept for qualified legal operations teams (no perpetual free tier) | Salesforce, Coupa, Google Docs, MS Word |
+| **[Jaggaer Contracts](https://www.jaggaer.com/)** | ⚡ AI-Driven Procurement & CLM | **~$3.0B Acquisition** (Vista Equity Partners; ~$300M Rev) | Starts at **$20,000/year** (S2C module entry) | **Free Trial:** 30-day proof-of-concept environment upon enterprise RFP qualification (no perpetual free tier) | JAGGAER ONE, SAP, Oracle |
+| **[Icertis Buy-Side CLM](https://www.icertis.com/)** | 🧠 Enterprise Contract Intelligence & Obligations | **$2.8B–$5.0B Valuation** (~$250M+ ARR) | Starts at **$40,000/year** (~$100,000+/year typical enterprise deployment) | **Free Trial:** 30-day customized sandbox environment for qualified enterprise evaluations (no perpetual free tier) | SAP, Microsoft Dynamics 365, Salesforce |
+| **[GEP SMART](https://www.gep.com/)** | 📦 Unified Source-to-Pay & Supply Chain | **~$2.6B Annual Revenue** (Founder-backed) | Starts at **$30,000/year** (procurement suite base tier) | **Free Trial:** Custom 14-day guided proof-of-concept pilot for qualified procurement teams (no perpetual free tier) | SAP, Oracle ERP Cloud, Microsoft |
+| **[Agiloft Procurement CLM](https://www.agiloft.com/)** | 🧩 No-Code CLM & Contract Intelligence | **~$1.0B+ Valuation** (KKR majority buyout) | Starts at **$65/user/month** (Astra AI Pro starts at **$120/month**) | **Free Tier:** Agiloft Astra AI has a **permanent Free Tier** with unlimited users, 1,000 AI credits/month, MS Word Add-In, and 3 custom playbooks (Core CLM has 14-day trial on request) | MS Word Online, Salesforce, Jira |
+| **[Zycus](https://www.zycus.com/)** | 🤖 Cognitive Agentic CLM (Merlin AI) | **~$300M–$360M Revenue** (Self-funded global enterprise) | Starts at **$24,000/year** (entry S2C package) | **Free Trial:** Guided 14-day interactive Merlin AI sandbox session upon demo request (no perpetual free tier) | SAP, Oracle, Microsoft Dynamics |
+
+---
+
+### 🔍 Detailed SaaS Profiles
+
+- **[SAP Ariba Contracts](https://www.sap.com/)** 🏢  
+  Global enterprise contracting backbone integrated with SAP Ariba Sourcing, Buying, and Invoicing. Standardizes clause repositories, handles Word redlining, enforces contractual pricing during purchase order creation, and automates supplier compliance.
+- **[Scout RFP (Workday Strategic Sourcing)](https://www.workday.com/)** 🎯  
+  Collaborative cloud sourcing application streamlining RFPs, reverse auctions, vendor engagement, and contract renewals directly into Workday Financial Management.
+- **[Tipalti](https://tipalti.com/)** 💳  
+  Automates end-to-end procurement, supplier tax compliance, purchase approvals, and cross-border payments across 196 countries in 120 currencies with automated renewal tracking.
+- **[Coupa Procurement & CLM](https://www.coupa.com/)** 🛒  
+  Enterprise Business Spend Management (BSM) platform with embedded AI contract intelligence that extracts operational metadata, calculates vendor risk scores, and routes contract approvals.
+- **[Ironclad](https://ironcladapp.com/)** 🤖  
+  Digital contracting platform favored by high-growth legal operations and procurement teams. Offers an interactive Contract Editor, workflow builder, automated redline comparisons, and AI contract summarization.
+- **[Jaggaer Contracts](https://www.jaggaer.com/)** ⚡  
+  AI-enabled Contract Lifecycle Management suite within JAGGAER ONE featuring automated third-party paper intake, clause variance detection, SLA monitoring, and dynamic risk assessment.
+- **[Icertis Buy-Side Contract Management](https://www.icertis.com/)** 🧠  
+  IDC MarketScape Leader turning contracts into strategic operational assets. Features GenAI copilots for contract drafting, third-party paper risk scoring, and obligation realization to prevent value leakage.
+- **[GEP SMART](https://www.gep.com/)** 📦  
+  Cloud-native unified source-to-pay platform delivering centralized contract repository control, real-time spend analytics, and automated vendor performance governance.
+- **[Agiloft Procurement CLM](https://www.agiloft.com/)** 🧩  
+  Data-first, no-code CLM platform allowing procurement teams to build custom approval logic, integrate seamlessly with Microsoft Word, and leverage Astra AI for automated clause classification.
+- **[Zycus](https://www.zycus.com/)** 🤖  
+  Equipped with Merlin AI autonomous agents that read supplier contracts, score deviations against enterprise playbooks, extract commitments, and track post-signature rebates automatically.
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+### ⭐ Open-Source Ecosystem Matrix (Ranked by Stars)
+
+*Sorted in descending order by GitHub stargazer count.*
+
+| Project | GitHub Stars Badge | License | Primary Category & Capabilities | Tech Stack |
 | :--- | :--- | :--- | :--- | :--- |
-| **[Icertis Contract Intelligence](https://www.icertis.com/)** | Enterprise Buy-Side CLM & Obligation AI | Quote-based enterprise subscription (~$100k+/yr) | ❌ No free tier; demo upon qualification | Cloud (Azure), SAP, Microsoft ERP/CRM |
-| **[Coupa Procurement & CLM](https://www.coupa.com/)** | Source-to-Contract & S2P Suite | Quote-based enterprise subscription | ❌ No free buyer tier (free Coupa Supplier Portal for vendors) | Cloud multi-tenant, NetSuite, SAP, Workday |
-| **[SAP Ariba Contracts](https://www.sap.com/)** | Global S2C & Enterprise Procurement | Quote-based enterprise subscription | ❌ No free buyer tier (Standard supplier accounts free up to volume threshold) | SAP Business Network, SAP S/4HANA |
-| **[Jaggaer Contracts](https://www.jaggaer.com/)** | AI-driven Sourcing & CLM | Quote-based enterprise subscription | ❌ No free tier; live demo upon request | Cloud (JAGGAER ONE), major ERPs |
-| **[Agiloft Procurement CLM](https://www.agiloft.com/)** | No-Code CLM & Contract Intelligence | Quote-based (~$30k-$68k+/yr); Astra AI has modular pricing | ✅ Astra AI standalone tier: Free for unlimited users (1,000 AI credits/mo, MS Word Add-In, 3 playbooks) | Cloud & Private Cloud, MS Word, Salesforce |
-| **[Ironclad](https://ironcladapp.com/)** | Digital Contracting & AI Negotiation | Quote-based (~$30k-$120k+/yr based on seats/volume) | ❌ No public free tier; sandbox pilots for qualified prospects | Cloud, Google Docs, Word Online, Coupa, Salesforce |
-| **[GEP SMART](https://www.gep.com/)** | Unified S2P & Spend Intelligence | Quote-based enterprise subscription | ❌ No free tier; custom quote only | Cloud, multi-ERP enterprise backends |
-| **[Zycus](https://www.zycus.com/)** | Cognitive CLM with Merlin AI Agents | Quote-based enterprise subscription | ❌ No free tier; interactive pilot demo upon request | Cloud, SAP, Oracle, Workday |
-| **[Tipalti](https://tipalti.com/)** | Mid-market AP & Procurement Approvals | Base fee (~$99–$149/mo) + per-transaction fees | ❌ No free tier; demo/trial upon sales consultation | Cloud, NetSuite, QuickBooks, Xero |
-| **[Scout RFP (Workday Strategic Sourcing)](https://www.workday.com/)** | Sourcing Events & Supplier Engagement | Quote-based enterprise subscription | ❌ No free tier; bundled or standalone Workday quote | Cloud, Workday Financial Management |
+| **[Odoo](https://github.com/odoo/odoo)** | [![Odoo Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers) | LGPL-3.0 | 📦 Comprehensive ERP suite with vendor procurement, purchase agreements, and RFQ tenders | Python, JavaScript, PostgreSQL |
+| **[ERPNext](https://github.com/frappe/erpnext)** | [![ERPNext Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) | GPL-3.0 | 🏭 Full-scale ERP with supplier management, contract registers, PO approvals, and bidding | Python, Frappe, MariaDB |
+| **[DocuSeal](https://github.com/docusealco/docuseal)** | [![DocuSeal Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | AGPL-3.0 | ✍️ Self-hosted digital document signing, PDF form fields, and cryptographic verification | Ruby, JavaScript, PostgreSQL |
+| **[Documenso](https://github.com/documenso/documenso)** | [![Documenso Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | AGPL-3.0 | 📝 Open-source DocuSign alternative for legal contracting, webhook automation, and signing | TypeScript, Next.js, Prisma |
+| **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** | [![Invoice Ninja Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) | Elastic-2.0 | 💵 Vendor expense tracking, quote-to-invoice workflows, and payment gateway automation | PHP, Laravel, Flutter |
+| **[Dolibarr](https://github.com/Dolibarr/dolibarr)** | [![Dolibarr Stars](https://img.shields.io/github/stars/Dolibarr/dolibarr?style=social&color=white)](https://github.com/Dolibarr/dolibarr/stargazers) | GPL-3.0 | 📋 Modular ERP/CRM with dedicated supplier contracts module and recurring subscription tracking | PHP, MySQL/PostgreSQL |
+| **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** | [![OpenSign Stars](https://img.shields.io/github/stars/OpenSignLabs/OpenSign?style=social&color=white)](https://github.com/OpenSignLabs/OpenSign/stargazers) | AGPL-3.0 | 🔏 Free and open-source PDF electronic signature platform with multi-party routing | TypeScript, Node.js, React, MongoDB |
+| **[OpenCost](https://github.com/opencost/opencost)** | [![OpenCost Stars](https://img.shields.io/github/stars/opencost/opencost?style=social&color=white)](https://github.com/opencost/opencost/stargazers) | Apache-2.0 | 📊 Open-source cloud spend monitoring, vendor infrastructure contract tracking, and Kubernetes cost allocation | Go, TypeScript, Prometheus |
+| **[OpenContracts](https://github.com/JSv4/OpenContracts)** | [![OpenContracts Stars](https://img.shields.io/github/stars/JSv4/OpenContracts?style=social&color=white)](https://github.com/JSv4/OpenContracts/stargazers) | Apache-2.0 | 📑 Legal document analytics, clause annotation, contract extraction, and layout parsing | Python, Django, TypeScript |
+| **[draftLegal](https://github.com/AniketTati/draft-legal)** | [![draftLegal Stars](https://img.shields.io/github/stars/AniketTati/draft-legal?style=social&color=white)](https://github.com/AniketTati/draft-legal/stargazers) | MIT | 🤖 Self-hosted AI-native CLM (Ironclad + Harvey alternative) with vector search & 30+ contract tools | Python, FastAPI, pgvector, React |
+| **[Aakd](https://github.com/aaked-app/aakd)** | [![Aakd Stars](https://img.shields.io/github/stars/aaked-app/aakd?style=social&color=white)](https://github.com/aaked-app/aakd/stargazers) | AGPL-3.0 | 🔔 Post-signature obligation tracker, renewal milestones, audit evidence, and MCP integration | Node.js, TypeScript, REST API |
+| **[VendorBridge-AI](https://github.com/vatsalgajera-tech/VendorBridge-AI)** | [![VendorBridge-AI Stars](https://img.shields.io/github/stars/vatsalgajera-tech/VendorBridge-AI?style=social&color=white)](https://github.com/vatsalgajera-tech/VendorBridge-AI/stargazers) | MIT | 🤝 AI procurement ERP with quotation comparison, delivery scoring, and purchase order cycles | Python, React, AI scoring models |
+| **[OpenTradeIntel](https://github.com/b2baitrade-ui/opentradeintel)** | [![OpenTradeIntel Stars](https://img.shields.io/github/stars/b2baitrade-ui/opentradeintel?style=social&color=white)](https://github.com/b2baitrade-ui/opentradeintel/stargazers) | MIT | 🇪🇺 Sourcing intelligence engine mining EU TED public tenders and matching supplier catalogs | Python, FastAPI, CLI |
 
 ---
 
-### Detailed SaaS Platform Breakdown
+### 🛠️ Deep-Dive: Open-Source Tools
 
-- **[Icertis Buy-Side Contract Management](https://www.icertis.com/)**  
-  Enterprise CLM recognized as a Leader in the IDC MarketScape for AI-enabled buy-side CLM. Offers GenAI-powered negotiation analytics, obligation management, and deep ERP integrations (SAP, Microsoft Dynamics). Certified for GDPR, SOC 2, and ISO 27001 compliance.
-- **[Coupa Procurement](https://www.coupa.com/)**  
-  Source-to-Contract (S2C) suite covering RFx sourcing events, reverse auctions, contract authoring with automated clause risk extraction, and supplier onboarding. Named a Leader in Gartner's Magic Quadrant for Source-to-Pay.
-- **[SAP Ariba Contracts](https://www.sap.com/)**  
-  Enterprise contract lifecycle management tightly coupled with SAP Ariba Sourcing, Buying, and Invoicing. Centralizes contract repositories, clause libraries, Microsoft Word redlining, e-signature, and automatic enforcement of negotiated terms during requisitioning.
-- **[Jaggaer Contracts](https://www.jaggaer.com/)**  
-  Procurement platform with AI-assisted Contract Lifecycle Management. Features conversational AI for contract requests and renewals, clause deviation scoring, dynamic risk evaluation, and guided self-service contracting.
-- **[Agiloft Procurement CLM](https://www.agiloft.com/)**  
-  No-code contract lifecycle management platform unifying procurement, legal, and finance workflows. Highly configurable data models, approval hierarchies, and integration with the Agiloft Astra AI engine for playbook compliance.
-- **[Ironclad](https://ironcladapp.com/)**  
-  Browser-first contracting platform with workflow designers, automated redline summaries, and renewal notifications. Features deep integrations with Coupa, OneTrust, Google Docs, and Microsoft Word Online with enterprise audit trails.
-- **[GEP SMART](https://www.gep.com/)**  
-  Unified procurement platform providing contract repository governance, spend visibility dashboards, purchase requisition workflows, and automated supplier scorecards across global entities.
-- **[Zycus](https://www.zycus.com/)**  
-  Agentic AI-driven CLM powered by Merlin AI for automated third-party paper review, risk deviation scoring, obligation milestones, and rebate tracking against negotiated commitments.
-- **[Tipalti](https://tipalti.com/)**  
-  Financial operations automation suite supporting purchase order approvals, contract renewal visibility, vendor onboarding, and global accounts payable execution.
-- **[Scout RFP (Workday Strategic Sourcing)](https://www.workday.com/)**  
-  Strategic sourcing and supplier engagement solution providing clean RFx pipelines, bid comparison sheets, and award workflows integrated into Workday Financial Management.
-
----
-
-## Open-Source GitHub Projects
-
-### Open-Source Ecosystem Matrix
-
-| Project | License | Primary Focus / Capabilities | Tech Stack | GitHub Repo |
-| :--- | :--- | :--- | :--- | :--- |
-| **OpenCLM** | AGPL-3.0 | Complete lifecycle CLM, clause library, RBAC, e-sign | TypeScript, Node.js, Keycloak | [openclm.ai](https://openclm.ai/) |
-| **draftLegal** | Open Source | AI-native CLM, contract copilot, vector similarity search | Python, FastAPI, pgvector, React | [AniketTati/draft-legal](https://github.com/AniketTati/draft-legal) |
-| **Aakd** | Open Source | Post-signature obligation tracking, renewal SLA alerts, MCP | Node.js / TypeScript, REST API | [aaked-app/aakd](https://github.com/aaked-app/aakd) |
-| **OpenTradeIntel** | MIT / Open | Public procurement tender analytics (TED EU notices) | Python, FastAPI, CLI | [b2baitrade-ui/opentradeintel](https://github.com/b2baitrade-ui/opentradeintel) |
-| **VendorBridge-AI** | Open Source | AI procurement ERP, RFQ comparison, vendor ratings | Python, React, AI scoring models | [vatsalgajera-tech/VendorBridge-AI](https://github.com/vatsalgajera-tech/VendorBridge-AI) |
-| **OpenContracts** | Apache-2.0 | Legal document analytics, layout parsing & annotation | Python, Django, TypeScript | [JSv4/OpenContracts](https://github.com/JSv4/OpenContracts) |
-| **DocuSeal** | AGPL-3.0 | Self-hosted digital e-signatures & document signing | Ruby, JavaScript | [docusealco/docuseal](https://github.com/docusealco/docuseal) |
-| **Documenso** | AGPL-3.0 | Open-source DocuSign alternative with robust APIs | TypeScript, Next.js, Prisma | [documenso/documenso](https://github.com/documenso/documenso) |
-| **ERPNext** | GPL-3.0 | Full ERP with procurement records and purchase orders | Python, Frappe Framework, MariaDB | [frappe/erpnext](https://github.com/frappe/erpnext) |
-| **Dolibarr** | GPL-3.0 | Small-business ERP/CRM with supplier contract register | PHP, MariaDB/MySQL | [Dolibarr/dolibarr](https://github.com/Dolibarr/dolibarr) |
+- **[Odoo Purchase & Contracts](https://github.com/odoo/odoo)** 📦  
+  Provides full source-to-pay automation: manage vendor price lists, automate purchase tenders, create blanket orders, track legal agreements, and verify supplier invoices with 3-way matching.
+- **[ERPNext](https://github.com/frappe/erpnext)** 🏭  
+  Open-source enterprise resource planning suite equipped with complete procurement pipelines: RFQ dissemination, supplier quotation comparisons, auto-generated purchase orders, and supplier contract master data.
+- **[DocuSeal](https://github.com/docusealco/docuseal)** ✍️  
+  Lightweight, self-hosted document signing engine. Easily embed signature requests into procurement portals, with mobile-friendly form filling and full cryptographic signing audits.
+- **[Documenso](https://github.com/documenso/documenso)** 📝  
+  Modern digital signing infrastructure built with Next.js and Prisma. Ideal for embedding legally binding contract signature workflows directly inside web applications.
+- **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** 💵  
+  Self-hosted financial suite for tracking vendor expenses, purchase quotes, auto-billing subscriptions, and managing vendor payables.
+- **[Dolibarr ERP/CRM](https://github.com/Dolibarr/dolibarr)** 📋  
+  Modular platform featuring supplier contract tracking, milestone scheduling, delivery terms recording, and purchase order dispatch.
+- **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** 🔏  
+  Feature-rich open-source e-signature solution supporting multi-party sequential signing, OTP signer validation, and document template management.
+- **[OpenCost](https://github.com/opencost/opencost)** 📊  
+  Vendor cloud infrastructure cost allocation tool built on OpenCost standards, providing real-time visibility into supplier cloud commitments and compute spend.
+- **[OpenContracts](https://github.com/JSv4/OpenContracts)** 📑  
+  Enterprise document analytics and layout parser tailored for legal documents. Annotates clauses, detects definitions, and extracts contractual terms from complex PDFs.
+- **[draftLegal](https://github.com/AniketTati/draft-legal)** 🤖  
+  AI-native CLM providing autonomous agent chat over contractual repositories, automated redline recommendations against playbooks, and citation-backed extraction without sending data off-premise.
+- **[Aakd](https://github.com/aaked-app/aakd)** 🔔  
+  Specialized post-signature CLM focusing on operationalizing executed documents: obligation assignment, calendar sync, renewal notification triggers, and Model Context Protocol (MCP) agent connectivity.
+- **[VendorBridge-AI](https://github.com/vatsalgajera-tech/VendorBridge-AI)** 🤝  
+  Procurement automation platform evaluating vendor bids across price, delivery SLA, and historical ratings with structured managerial approval gates.
+- **[OpenTradeIntel](https://github.com/b2baitrade-ui/opentradeintel)** 🇪🇺  
+  Public procurement tender parser fetching live TED (Tenders Electronic Daily) notices across the European Union and ranking opportunities against domestic supplier catalogs.
 
 ---
 
-### Full-Lifecycle & AI CLM Projects
+## 📐 Recommended Open-Source Architecture
 
-- **[OpenCLM](https://openclm.ai/)**  
-  Free, open-source (AGPL v3) full-suite CLM platform with authoring, clause library management, multi-step approvals, e-signature via OpenSign, renewal reminders, obligation monitoring, and analytics dashboards. Self-hosted with 12 pre-built RBAC roles, multi-tenancy, and Keycloak SSO.
-- **[draftLegal](https://github.com/AniketTati/draft-legal)**  
-  Self-hosted, AI-native CLM positioned as an open-source alternative to Ironclad + Harvey. Features agent chat with ~30 tools over contracts (search, cite, compare, draft, redline, route approvals), clause-level citations, portfolio intelligence via hybrid search (pgvector + Elasticsearch), and BYO-LLM key architecture.
-- **[Aakd](https://github.com/aaked-app/aakd)**  
-  Open-source, self-hostable CLM focused on post-signature contract operations: upload executed PDFs/DOCX, review source-linked extracted obligations, assign owners and deadlines, track renewals, and capture audit evidence. Includes REST APIs and Model Context Protocol (MCP) support for agentic AI workflows.
-- **[OpenTradeIntel](https://github.com/b2baitrade-ui/opentradeintel)**  
-  Procurement and sourcing intelligence engine that queries EU TED public procurement tenders via API, normalizes tender notices, and ranks them against local supplier catalogs with deterministic scoring.
-- **[VendorBridge-AI](https://github.com/vatsalgajera-tech/VendorBridge-AI)**  
-  Procurement ERP platform covering vendor management, RFQ creation, quotation comparison with AI scoring (price, delivery, vendor rating), multi-stage approval workflows, purchase orders, invoices, and activity audit trails.
-
----
-
-### Specialized & Complementary Tools
-
-- **[ERPNext](https://github.com/frappe/erpnext)** — Comprehensive open-source ERP with procurement workflows, RFQs, purchase orders, and supplier accounting.
-- **[Dolibarr](https://github.com/Dolibarr/dolibarr)** — Modular ERP/CRM with supplier contract registry for small and mid-market organizations.
-- **[OpenContracts](https://github.com/JSv4/OpenContracts)** — Open-source document analytics platform for contract review, clause annotation, and parsing large legal repositories.
-- **[DocuSeal](https://github.com/docusealco/docuseal)** & **[Documenso](https://github.com/documenso/documenso)** — Self-hosted e-signature solutions to embed secure document execution directly into custom contract flows.
-
----
-
-## Recommended Open-Source Architecture
-
-For organizations seeking a self-hosted, vendor-neutral source-to-contract pipeline without per-seat enterprise licensing fees:
+Build an end-to-end, enterprise-grade, self-hosted Source-to-Contract pipeline with zero per-seat licensing fees:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    Sourcing & Supplier Discovery                │
-│       VendorBridge-AI (RFQs & Vendor Ratings) / OpenTradeIntel │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │
-                                 ▼
-┌─────────────────────────────────────────────────────────────────┐
-│               Authoring, AI Review & Negotiation                │
-│            OpenCLM (Clause Library) + draftLegal (AI)           │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │
-                                 ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      Execution & Signing                        │
-│                   DocuSeal  /  Documenso                        │
-└────────────────────────────────┬────────────────────────────────┘
-                                 │
-                                 ▼
-┌─────────────────────────────────────────────────────────────────┐
-│               Post-Signature Obligation Management              │
-│                Aakd (Milestones, Renewals, MCP)                 │
-└─────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│                   1. Sourcing & Supplier Matching                      │
+│       VendorBridge-AI (RFQs & Scoring)  |  OpenTradeIntel (Tenders)    │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   2. Contract Authoring & AI Redlining                 │
+│         draftLegal (AI Playbooks)  |  OpenContracts (Clause NLP)       │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   3. Approvals, POs & Digital Signing                  │
+│       Odoo / ERPNext (Approvals & ERP)  |  DocuSeal / OpenSign (Sign)  │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│              4. Post-Signature Obligations & Spend Audits              │
+│       Aakd (Obligations & MCP)  |  OpenCost (Cloud Contract Spend)     │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
-We welcome community contributions! To add a new platform or open-source tool:
+Contributions are warmly encouraged! To propose a tool, update pricing, or refine benchmarks:
 
-1. Fork the repository.
-2. Add your entry to [README.md](README.md) following the existing Markdown table format.
-3. Include: Product/Project name, direct URL, accurate pricing/license details, and 1–2 descriptive sentences.
-4. Open a Pull Request with a clear summary of your changes.
+1. 🍴 Fork this repository.
+2. 📝 Update [`README.md`](README.md) following the existing Markdown tables and badge formats.
+3. 🔎 Ensure all SaaS listings include specific starting prices, accurate free tier/trial limits, and company scale metrics.
+4. ⭐ For open-source projects, include the social stars badge linked to `/stargazers`.
+5. 🚀 Open a Pull Request with a clear description of your additions!
 
 ---
 
-## Disclaimer
+## 💖 Support & Sponsor
 
-- This list is community-curated for informational purposes and does not constitute formal legal or financial advice.
-- Enterprise procurement and contract management tools must comply with applicable regulations (GDPR, SOX, HIPAA, and corporate delegation-of-authority guidelines).
-- Self-hosted open-source software requires dedicated access controls, encrypted storage, and human verification of AI-generated contractual obligations.
+If you find this repository valuable for your procurement operations, legal tech stack, or engineering architecture, please consider supporting the project:
+
+- ⭐ **Star the repo** on GitHub to help others discover it!
+- 🍴 **Fork and share** with fellow procurement and legal ops practitioners.
+- ☕ **Buy me a coffee / Sponsor development:**  
+  [![GitHub Sponsor](https://img.shields.io/badge/Sponsor-%E2%99%A5-pink?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ishandutta2007)
+
+Your support helps keep this directory actively curated and updated!
+
+---
+
+##  Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Buy-Side-Procurement-Contract-Management&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Buy-Side-Procurement-Contract-Management&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer
+
+- This repository is a community-curated directory compiled for research and educational purposes; it does not constitute formal legal, financial, or procurement advisory.
+- Enterprise software pricing, subscription terms, and trial durations change frequently; verify directly with each vendor.
+- Self-hosted open-source software deployments handling contractual data should adhere strictly to internal data governance policies, access controls, and applicable statutory frameworks (e.g., GDPR, SOC 2, HIPAA).
